@@ -1,4 +1,4 @@
-import { Box, Text, Button, HStack } from "@chakra-ui/react";
+import { Box, Text, HStack } from "@chakra-ui/react";
 import { FaInstagram, FaFlickr } from "react-icons/fa";
 
 const Contact = () => {
@@ -15,45 +15,51 @@ const Contact = () => {
       </Text>
 
       <HStack justify="center" gap={6}>
-        {/* Instagram Button */}
-        <Button
-          as="a"
-          href="https://www.instagram.com/yourusername" // Replace with your Instagram URL
+        {/* Instagram Link */}
+        <a
+          href="https://www.instagram.com/schu_lens/"
           target="_blank"
-          variant="outline"
-          colorScheme="pink"
-          size="lg"
-          color={"black"}
-          leftIcon={<FaInstagram />}
+          style={{
+            textDecoration: "none",
+            padding: "10px 20px",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            display: "inline-block",
+            marginRight: "10px",
+          }}
         >
-          Instagram
-        </Button>
+          <FaInstagram /> Instagram
+        </a>
 
-        {/* Flickr Button */}
-        <Button
-          as="a"
-          href="https://www.flickr.com/yourusername" // Replace with your Flickr URL
+        {/* Flickr Link */}
+        <a
+          href="https://www.flickr.com/people/165956434@N08/"
           target="_blank"
-          variant="outline"
-          colorScheme="black"
-          color={"black"}
-          size="lg"
-          leftIcon={<FaFlickr />}
+          style={{
+            textDecoration: "none",
+            padding: "10px 20px",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            display: "inline-block",
+          }}
         >
-          Flickr
-        </Button>
-        <Button
-          as="a"
-          href="https://www.behance.net/bulmamanson/projects#" // Replace with your Flickr URL
+          <FaFlickr /> Flickr
+        </a>
+
+        {/* Behance Link */}
+        <a
+          href="https://www.behance.net/bulmamanson/projects#"
           target="_blank"
-          variant="outline"
-          colorScheme="black"
-          color={"black"}
-          size="lg"
-          leftIcon={<FaFlickr />}
+          style={{
+            textDecoration: "none",
+            padding: "10px 20px",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            display: "inline-block",
+          }}
         >
-          Behance
-        </Button>
+          <FaFlickr /> Behance
+        </a>
       </HStack>
     </Box>
   );
