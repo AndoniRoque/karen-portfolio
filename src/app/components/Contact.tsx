@@ -42,6 +42,18 @@ const Contact = () => {
         >
           Flickr
         </Button>
+        <Button
+          as="a"
+          href="https://www.behance.net/bulmamanson/projects#" // Replace with your Flickr URL
+          target="_blank"
+          variant="outline"
+          colorScheme="black"
+          color={"black"}
+          size="lg"
+          leftIcon={<FaFlickr />}
+        >
+          Behance
+        </Button>
       </HStack>
     </Box>
   );
