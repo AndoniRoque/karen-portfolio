@@ -1,5 +1,6 @@
-// components/Navbar.tsx
 import { Box, Flex, Text, useBreakpointValue } from "@chakra-ui/react";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
