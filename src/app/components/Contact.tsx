@@ -1,5 +1,5 @@
 import { Box, Text, HStack } from "@chakra-ui/react";
-import { FaInstagram, FaFlickr } from "react-icons/fa";
+import { FaInstagram, FaFlickr, FaBehance } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -19,46 +19,54 @@ const Contact = () => {
         <a
           href="https://www.instagram.com/schu_lens/"
           target="_blank"
+          rel="noopener noreferrer"
           style={{
             textDecoration: "none",
             padding: "10px 20px",
             border: "1px solid #ccc",
             borderRadius: "5px",
-            display: "inline-block",
-            marginRight: "10px",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
           }}
         >
-          <FaInstagram /> Instagram
+          <FaInstagram /> <span>Instagram</span>
         </a>
 
         {/* Flickr Link */}
         <a
           href="https://www.flickr.com/people/165956434@N08/"
           target="_blank"
+          rel="noopener noreferrer"
           style={{
             textDecoration: "none",
             padding: "10px 20px",
             border: "1px solid #ccc",
             borderRadius: "5px",
-            display: "inline-block",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
           }}
         >
-          <FaFlickr /> Flickr
+          <FaFlickr /> <span>Flickr</span>
         </a>
 
         {/* Behance Link */}
         <a
           href="https://www.behance.net/bulmamanson/projects#"
           target="_blank"
+          rel="noopener noreferrer"
           style={{
             textDecoration: "none",
             padding: "10px 20px",
             border: "1px solid #ccc",
             borderRadius: "5px",
-            display: "inline-block",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
           }}
         >
-          <FaFlickr /> Behance
+          <FaBehance /> <span>Behance</span>
         </a>
       </HStack>
     </Box>
